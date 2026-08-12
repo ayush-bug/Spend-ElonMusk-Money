@@ -45,6 +45,9 @@ flex-direction: column;
 .money{
     width: 80%;
     height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +58,6 @@ flex-direction: column;
     margin-top: 10px;
 }
 .item{
-    width: 100%;
     height: 300px;
     background-color: #272727;
     display: flex;
@@ -112,4 +114,32 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.items-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+/* reponse */
+@media (max-width:768px) {
+     .items-container{
+        grid-template-columns: repeat(2,1fr);
+     }
+}
+@media (max-width:500px){
+    .items-container{ 
+    grid-template-columns: 1fr;
+    }
+    .musk,.money,.item{
+        width: 100%;
+    }
 }
