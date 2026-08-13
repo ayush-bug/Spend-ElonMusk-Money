@@ -20,9 +20,17 @@ if(money >= price){
     quantityInput.value = quantity;
     updateMoney();
 }
-else{
-    alert("bro , leave it man thats more than enough , where the hell you put this all items");
-    buyButton.disabled = true;
+else if(money <= 1000){
+  swal.fire("leave it man , I also have family and children , :(")
+}
+else {
+  Swal.fire({
+  title: "Bruh!!",
+  text: "bro , leave it man thats more than enough , where the hell you put this all items",
+  imageUrl: "img/items/crying-musk.png",
+  imageWidth: 400,
+  imageAlt: "alone musk"
+});
 }
   });
   sellButton.addEventListener("click" , function(){
