@@ -31,11 +31,13 @@ flex-direction: column;
 .musk{
     width: 80%;
     height: 250px;
-    background-color: aqua;
+    background-color: #853953;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 2px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .musk img{
     width: 120px;
@@ -51,7 +53,8 @@ flex-direction: column;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #051937, #002e44, #004043, #2a513f, #555e40);
+     background-color: #2B5748;
+     border: 2px solid rgb(89, 130, 89);
     font-weight: bold;
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -64,7 +67,9 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   background-color: #002e44;
+   background-color: #09122C;
+   border: 2px solid white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .item img{
